@@ -1,12 +1,12 @@
 -- new stuff
 _G.CodexUiCustomSettings = {
-CodexSpooferImage = 17296589456,
-CodexSpooferText = "Mirage Executor",
-CodexSpooferPoweredBy = "Created by Zizzy",
-FloatingIconColor=Color3.fromRGB(40, 40, 43),
-MainUiBackground = Color3.fromRGB(40, 40, 43),
-Icons=Color3.fromRGB(113, 121, 126),
-IconsOff = Color3.fromRGB(0, 0, 0),
+CodexSpooferImage = 17332806242,
+CodexSpooferText = "Mirager",
+CodexSpooferPoweredBy = "https://discord.gg/5XTCREDyW6",
+FloatingIconColor=Color3.fromRGB(0, 0, 0),
+MainUiBackground = Color3.fromRGB(0, 0, 0),
+Icons=Color3.fromRGB(128, 128, 128),
+IconsOff = Color3.fromRGB(255, 255, 255),
 Fade = false
 }
 
