@@ -3,10 +3,10 @@
 local ToggleButton = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
 
---Properties:
+-- Properties:
 
 ToggleButton.Name = "ToggleButton"
-ToggleButton.Parent = game:GetService("CoreGui"):WaitForChild("RayHub") -- Set the parent to RayHub
+ToggleButton.Parent = game:GetService("CoreGui")
 ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ToggleButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ToggleButton.BorderSizePixel = 0
