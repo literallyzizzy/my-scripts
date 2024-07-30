@@ -46,24 +46,24 @@ local function GetIcon(IconName)
 	end
 end   
 
-local Orion = Instance.new("ScreenGui")
-Orion.Name = "Orion"
+local Ray Hub = Instance.new("ScreenGui")
+Ray Hub.Name = "Ray Hub"
 if syn then
-	syn.protect_gui(Orion)
-	Orion.Parent = game.CoreGui
+	syn.protect_gui(Ray Hub)
+	Ray Hub.Parent = game.CoreGui
 else
-	Orion.Parent = gethui() or game.CoreGui
+	Ray Hub.Parent = gethui() or game.CoreGui
 end
 
 if gethui then
 	for _, Interface in ipairs(gethui():GetChildren()) do
-		if Interface.Name == Orion.Name and Interface ~= Orion then
+		if Interface.Name == Ray Hub.Name and Interface ~= Ray Hub then
 			Interface:Destroy()
 		end
 	end
 else
 	for _, Interface in ipairs(game.CoreGui:GetChildren()) do
-		if Interface.Name == Orion.Name and Interface ~= Orion then
+		if Interface.Name == Ray Hub.Name and Interface ~= Ray Hub then
 			Interface:Destroy()
 		end
 	end
@@ -71,9 +71,9 @@ end
 
 function RayHub:IsRunning()
 	if gethui then
-		return Orion.Parent == gethui()
+		return Ray Hub.Parent == gethui()
 	else
-		return Orion.Parent == game:GetService("CoreGui")
+		return Ray Hub.Parent == game:GetService("CoreGui")
 	end
 
 end
@@ -385,7 +385,7 @@ local NotificationHolder = SetProps(SetChildren(MakeElement("TFrame"), {
 	Position = UDim2.new(1, -25, 1, -25),
 	Size = UDim2.new(0, 300, 1, -25),
 	AnchorPoint = Vector2.new(1, 1),
-	Parent = Orion
+	Parent = Ray Hub
 })
 
 function RayHub:MakeNotification(NotificationConfig)
@@ -601,7 +601,7 @@ function RayHub:MakeWindow(WindowConfig)
 	}), "Stroke")
 
 	local MainWindow = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
-		Parent = Orion,
+		Parent = Ray Hub,
 		Position = UDim2.new(0.5, -307, 0.5, -172),
 		Size = UDim2.new(0, 615, 0, 344),
 		ClipsDescendants = true
@@ -687,7 +687,7 @@ function RayHub:MakeWindow(WindowConfig)
 	local function LoadSequence()
 		MainWindow.Visible = false
 		local LoadSequenceLogo = SetProps(MakeElement("Image", WindowConfig.IntroIcon), {
-			Parent = Orion,
+			Parent = Ray Hub,
 			AnchorPoint = Vector2.new(0.5, 0.5),
 			Position = UDim2.new(0.5, 0, 0.4, 0),
 			Size = UDim2.new(0, 28, 0, 28),
@@ -696,7 +696,7 @@ function RayHub:MakeWindow(WindowConfig)
 		})
 
 		local LoadSequenceText = SetProps(MakeElement("Label", WindowConfig.IntroText, 14), {
-			Parent = Orion,
+			Parent = Ray Hub,
 			Size = UDim2.new(1, 0, 1, 0),
 			AnchorPoint = Vector2.new(0.5, 0.5),
 			Position = UDim2.new(0.5, 19, 0.5, 0),
@@ -1760,7 +1760,7 @@ function RayHub:MakeWindow(WindowConfig)
 end   
 
 function RayHub:Destroy()
-	Orion:Destroy()
+	Ray Hub:Destroy()
 end
 
 return RayHub
