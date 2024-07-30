@@ -8,7 +8,7 @@ local UICorner = Instance.new("UICorner")
 --Properties:
 
 RayHubToggle.Name = "RayHubToggle"
-RayHubToggle.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RayHubToggle.Parent = CoreGui
 
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = RayHubToggle
