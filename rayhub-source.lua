@@ -47,7 +47,8 @@ local function GetIcon(IconName)
 end   
 
 local Orion = Instance.new("ScreenGui")
-Orion.Name = "Orion"
+Orion.Name = "Ray Hub"
+Orion.Draggable = true
 if syn then
 	syn.protect_gui(Orion)
 	Orion.Parent = game.CoreGui
