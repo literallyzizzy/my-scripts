@@ -3,6 +3,7 @@
 local ButtonParent = Instance.new("ScreenGui")
 ButtonParent.Name = "ButtonParent"
 ButtonParent.Parent = game:GetService("CoreGui")
+ButtonParent.Enabled = true
 
 local ToggleButton = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
