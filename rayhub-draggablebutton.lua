@@ -1,12 +1,16 @@
 -- Instances:
 
+local ButtonParent = Instance.new("ScreenGui")
+ButtonParent.Name = "ButtonParent"
+ButtonParent.Parent = game:GetService("CoreGui")
+
 local ToggleButton = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
 
 -- Properties:
 
 ToggleButton.Name = "ToggleButton"
-ToggleButton.Parent = game:GetService("CoreGui")
+ToggleButton.Parent = ButtonParent
 ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ToggleButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ToggleButton.BorderSizePixel = 0
