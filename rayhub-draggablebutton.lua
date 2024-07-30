@@ -29,7 +29,7 @@ local script = Instance.new('LocalScript', ToggleButton)
 
 local UserInputService = game:GetService("UserInputService")
 
-local gui = script.Parent
+
 
 local dragging
 local dragInput
