@@ -651,9 +651,9 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Interface Hidden",
-			Content = "Tap RightShift to reopen the interface",
-			Time = 5
+			Name = "RayHub Hidden",
+			Content = "Press RightShift to reopen, or click the toggle button.",
+			Time = 3.5
 		})
 		WindowConfig.CloseCallback()
 	end)
