@@ -8,7 +8,7 @@ local UICorner = Instance.new("UICorner")
 --Properties:
 
 DraggableButton.Name = "DraggableButton"
-DraggableButton.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DraggableButton.Parent = game:GetService("CoreGui")
 DraggableButton.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 ImageButton.Parent = DraggableButton
